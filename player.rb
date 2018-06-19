@@ -8,7 +8,7 @@ class Player
       @numbers = 20
     end
   
-    def play(other_player)
+    def play()
       number1 = rand(@numbers) + 1
       number2 = rand(@numbers) + 1
       puts "#{@name}: What does #{number1} plus #{number2}?"

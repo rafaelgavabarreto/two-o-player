@@ -20,10 +20,9 @@ class Game
     while not game_over?
       current_player = @turn_manager.current_player
 
-      puts "It is #{current_player.name}'s turn"
-      puts
+      puts "It is #{current_player.name}'s turn\n"
 
-      current_player.play(current_player)
+      current_player.play()
 
       if current_player.current_points > 0
         print_summary
